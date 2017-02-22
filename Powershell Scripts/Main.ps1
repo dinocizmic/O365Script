@@ -25,7 +25,7 @@ $confirmation = Read-Host "Do you want to create a new user or remove a user? [N
         if ($Confirmation -eq 'y')
             {
                 echo 'New account will be created...'
-                New-MsolUser -DisplayName $DisplayName -FirstName $FirstName -LastName $LastName -UserPrincipalName $UserPrincipalName -UsageLocation US -LicenseAssignment Blucora:ENTERPRISEPACK
+                New-MsolUser -DisplayName $DisplayName -FirstName $FirstName -LastName $LastName -UserPrincipalName $UserPrincipalName -UsageLocation US -LicenseAssignment "Bcor:ENTERPRISEPACK"
             }
         if ($Confirmation -eq 'n')
             {
